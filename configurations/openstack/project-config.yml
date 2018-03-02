@@ -1,5 +1,9 @@
 auth_url: # OpenStack authentication URL
 az: # Availability zone
+az2: # Availability zone #2
+az3: # Availability zone #3
+az4: # Availability zone #4
+az5: # Availability zone #5
 default_key_name: # Name of the SSH key pair
 default_security_groups: # List of security groups for the instances
 net_id: # OpenStack network identifier
@@ -7,3 +11,14 @@ openstack_domain: # OpenStack domain (optional)
 openstack_project: # Openstack project name
 region: # OpenStack region (optional)
 openstack_username: # OpenStack admin username
+openstack_no_proxy: # No proxy env variable for OpensTack CPI
+
+openstack_cpi_release_url: # Openstack CPI Release path
+credhub_release_url: # Credhub Release path
+uaa_release_url: # UAA Release path
+bosh_release_url: # Bosh Release path
+bosh_stemcell_url: # Stemcell path
+bosh_dns_release_url: # Bosh DNS path
+
+master_floating_ips:  # List of Floating IPs for masters
+worker_floating_ips: # List of Floating IPs for workers

@@ -2,28 +2,40 @@ azs:
 - name: z1
   cloud_properties:
     availability_zone: ((az))
+- name: z2
+  cloud_properties:
+    availability_zone: ((az2))
+- name: z3
+  cloud_properties:
+    availability_zone: ((az3))
+- name: z4
+  cloud_properties:
+    availability_zone: ((az4))
+- name: z5
+  cloud_properties:
+    availability_zone: ((az5))
 
 vm_types:
 - name: minimal
   cloud_properties:
-    instance_type: m1.small
+    instance_type: generic1.small
     root_disk_size_gb: 20
 
 - name: master
   cloud_properties:
-    instance_type: m1.small
+    instance_type: generic1.small
     root_disk_size_gb: 20
 
 - name: worker
   cloud_properties:
-    instance_type: m1.large
+    instance_type: generic1.large
     root_disk_size_gb: 100
 
 networks:
 - name: default
   type: dynamic
   subnets:
-  - azs: [z1]
+  - azs: [z1,z2,z3,z4,z5]
     dns: [((dns_recursor_ip))]
     cloud_properties:
       net_id: ((net_id))

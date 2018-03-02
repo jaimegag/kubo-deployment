@@ -1,0 +1,4 @@
+---
+- type: replace
+  path: /releases/name=bosh-dns/url?
+  value: ((bosh_dns_release_url))

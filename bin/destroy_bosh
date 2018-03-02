@@ -114,6 +114,18 @@ destroy_openstack() {
   bosh clean-up --all -n
   bosh delete-env "$(repo_directory)/bosh-deployment/bosh.yml" \
     --ops-file "$(repo_directory)/bosh-deployment/openstack/cpi.yml" \
+    --ops-file "$(repo_directory)/bosh-deployment/uaa.yml" \
+    --ops-file "$(repo_directory)/bosh-deployment/local-dns.yml" \
+    --ops-file "$(repo_directory)/configurations/generic/dns-addresses.yml" \
+    --ops-file "$(repo_directory)/bosh-deployment/credhub.yml" \
+    --ops-file "$(repo_directory)/configurations/generic/bosh-admin-client.yml" \
+    --ops-file "$(repo_directory)/bosh-deployment/openstack/trusted-certs.yml" \
+    --ops-file "$(repo_directory)/bosh-deployment/openstack/keystone-v2.yml" \
+    --ops-file "$(repo_directory)/configurations/generic/bosh-password.yml" \
+    --ops-file "$(repo_directory)/configurations/openstack/bosh-dynvip.yml" \
+    --ops-file "$(repo_directory)/configurations/openstack/bosh-local.yml" \
+    --ops-file "$(repo_directory)/configurations/openstack/bosh-nova.yml" \
+    --ops-file "$(repo_directory)/configurations/openstack/bosh-blp.yml" \
     --state "${bosh_env}/state.json" \
     --vars-store "${bosh_env}/creds.yml" \
     --vars-file "${bosh_env}/director.yml"  \

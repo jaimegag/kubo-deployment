@@ -1,0 +1,20 @@
+---
+- type: replace
+  path: /releases/name=bosh/url?
+  value: ((bosh_release_url))
+
+- type: replace
+  path: /releases/name=credhub/url?
+  value: ((credhub_release_url))
+
+- type: replace
+  path: /releases/name=uaa/url?
+  value: ((uaa_release_url))
+
+- type: replace
+  path: /releases/name=bosh-openstack-cpi/url?
+  value: ((openstack_cpi_release_url))
+
+- type: replace
+  path: /resource_pools/name=vms/stemcell/url?
+  value: ((bosh_stemcell_url))
