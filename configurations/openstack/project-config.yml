@@ -13,11 +13,11 @@ region: # OpenStack region (optional)
 openstack_username: # OpenStack admin username
 openstack_no_proxy: # No proxy env variable for OpensTack CPI
 
-openstack_cpi_release_url: # Openstack CPI Release path
-credhub_release_url: # Credhub Release path
-uaa_release_url: # UAA Release path
-bosh_release_url: # Bosh Release path
-bosh_stemcell_url: # Stemcell path
+#openstack_cpi_release_url: # Openstack CPI Release path
+#credhub_release_url: # Credhub Release path
+#uaa_release_url: # UAA Release path
+#bosh_release_url: # Bosh Release path
+#bosh_stemcell_url: # Stemcell path
 bosh_dns_release_url: # Bosh DNS path
 
 master_floating_ips:  # List of Floating IPs for masters

@@ -123,7 +123,6 @@ destroy_openstack() {
     --ops-file "$(repo_directory)/bosh-deployment/openstack/keystone-v2.yml" \
     --ops-file "$(repo_directory)/configurations/generic/bosh-password.yml" \
     --ops-file "$(repo_directory)/configurations/openstack/bosh-dynvip.yml" \
-    --ops-file "$(repo_directory)/configurations/openstack/bosh-local.yml" \
     --ops-file "$(repo_directory)/configurations/openstack/bosh-nova.yml" \
     --ops-file "$(repo_directory)/configurations/openstack/bosh-blp.yml" \
     --state "${bosh_env}/state.json" \
