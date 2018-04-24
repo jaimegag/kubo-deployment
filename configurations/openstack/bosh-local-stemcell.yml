@@ -1,0 +1,4 @@
+---
+- type: replace
+  path: /resource_pools/name=vms/stemcell/url?
+  value: ((bosh_stemcell_url))
