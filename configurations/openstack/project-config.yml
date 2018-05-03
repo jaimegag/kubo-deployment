@@ -25,3 +25,5 @@ master_floating_ips:  # List of Floating IPs for masters
 worker_floating_ips: # List of Floating IPs for workers
 
 search_domains: # Blank space separated domain names to include in the /etc/resolv.conf configuration
+
+public_key: # Public SSH Key
