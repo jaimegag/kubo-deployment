@@ -6,7 +6,7 @@
     url: "https://bosh.io/d/github.com/cloudfoundry-incubator/backup-and-restore-sdk-release?v=1.6.0"
     sha1: "4e84e1e70e5a6e7a473c4ded5f5e7ae4a3ad65e5"
 - type: replace 
-  path: /instance_groups/name=bosh/jobs/-
+  path: /instance_groups/0/jobs/-
   value:
     name: database-backup-restorer
     release: backup-and-restore-sdk
