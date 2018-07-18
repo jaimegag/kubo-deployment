@@ -24,10 +24,10 @@
 - type: replace
   path: /resource_pools/name=vms/cloud_properties/instance_type?
   value: generic1.large
-- type: replace
-  path: /instance_groups/name=bosh/properties/hm/intervals?
-  value:
-    agent_timeout: 300
+#- type: replace
+#  path: /instance_groups/name=bosh/properties/hm/intervals?
+#  value:
+#    agent_timeout: 300
 - type: replace
   path: /instance_groups/0/name?
   value: ((director_name))-bosh
