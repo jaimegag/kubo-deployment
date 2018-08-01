@@ -14,3 +14,7 @@
 - type: replace
   path: /releases/name=bosh-openstack-cpi/url?
   value: ((openstack_cpi_release_url))
+
+- type: replace
+  path: /releases/name=bpm/url?
+  value: ((bpm_release_url))
