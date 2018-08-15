@@ -24,6 +24,14 @@
 - type: replace
   path: /resource_pools/name=vms/cloud_properties/instance_type?
   value: generic1.large
+- type: replace
+  path: /instance_groups/name=bosh/properties/ntp?
+  value:
+  - 169.254.169.254
+- type: replace
+  path: /cloud_provider/properties/ntp?
+  value:
+  - 169.254.169.254
 #- type: replace
 #  path: /instance_groups/name=bosh/properties/hm/intervals?
 #  value:
